@@ -1,0 +1,22 @@
+.hero {
+	&__title_wrapper {
+		display: flex;
+		height: 100%;
+		margin-bottom: 30px;
+	}
+	&__title {
+		width: 220px;
+		font-family: 'Gilroy','Arial', sans-serif;
+		font-size: 47px;
+		line-height: 57px;
+		margin: 40px 40px 0px 0px;
+	}
+	&__subtitle {
+		width: 240px;
+		font-family: 'Gilroy','Arial', sans-serif;
+		font-size: 18px;
+		line-height: 21px;
+		margin-top: 103px;
+	}
+	
+}
