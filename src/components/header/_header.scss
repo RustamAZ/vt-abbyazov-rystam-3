@@ -9,16 +9,18 @@
     align-items: center;
     height: 100%;
   }
+  &__list-item {
+    &:first-child {
+      margin-right: auto;
+      margin-left: 5px;
+    }
+  }
   &__link{
     margin-left: 20px;
     font-family: 'Gilroy','Arial' sans-serif;
     font-size: 18px;
     line-height: 22px;
     color: #828282;
-    &:first-child {
-      margin-right: auto;
-      margin-left: 5px;
-    }
     &.active{
       font-weight: bold;
       color: #070707;

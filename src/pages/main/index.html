@@ -18,34 +18,123 @@
 		<section class="hero">
 			<div class="container">
 				<div class="hero__title_wrapper">
-					<h1 class="hero__title">Abbyazov Rustam</h1>
+					<h1 class="hero__title">Antonina Antoninovna</h1>
 					<span class="hero__subtitle">Future front-end developer 23 years old, Togliatty</span>
 				</div>
 				<div class="hero__slider">
-					<div class="slider__inner">
-						<ul class="slider__list">
-							<li class="slider__item">
-								<img class="slider__img" src="https://via.placeholder.com/1000x465" alt="">
+					<div class="hero__slider-wrapper slider__wrapper_js">
+						<div class="hero__slider-inner slider__inner-wrapper_js">
+							<div class="hero__slider-slide slider__slide_js"></div>
+							<div class="hero__slider-slide slider__slide_js"></div>
+							<div class="hero__slider-slide slider__slide_js"></div>
+							<div class="hero__slider-slide slider__slide_js"></div>
+						</div>
+					</div>
+					<div class="hero__slider-controls">
+						<button class="hero__slider-contol-left slider__button-back_js"></button>
+						<div class="hero__slider-pagination slider__pagination_js"></div>
+						<button class="hero__slider-contol-right slider__button-next_js"></button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="about">
+			<div class="container">
+				<h2 class="about__title title">About me</h2>
+				<div class="about__content">
+					<div class="about__content-item">Aliquam tortor molestie turpis est tristique. Congue diam orci amet quis semper ut. Vitae aenean nibh facilisis urna, ultricies euismod nunc. Commodo fringilla sit hendrerit consequat. Vel ac elit vel sagittis.</div>
+					<div class="about__content-item">Tincidunt id quis pellentesque rutrum pretium. Egestas aliquam dictum ipsum nisl, sed pulvinar. Commodo elit sed a fermentum non justo. Etiam platea consectetur.</div>
+					<div class="about__content-item">Quam ipsum odio tellus etiam aliquam dolor ut hendrerit. Felis risus nec vitae nunc ultricies placerat. Nullam nec felis eu id dolor pellentesque tristique. </div>
+				</div>
+			</div>
+		</section>
+		<section class="skills">
+			<div class="container">
+				<h2 class="skills__title title">Skills</h2>
+				<div class="skills__subtitle">I work in such programs as</div>
+				<ul class="skills__list">
+					@@include('skills-item/index.html', {
+						"svg":"/static/images/html.svg",
+						"alt":"html 5",
+						"title":"HTML 5",
+						"value":"85%",
+					})
+					@@include('skills-item/index.html', {
+						"svg":"/static/images/css.svg",
+						"alt":"css/scss",
+						"title":"CSS/SCSS",
+						"value":"55%",
+					})
+					@@include('skills-item/index.html', {
+						"svg":"/static/images/js.svg",
+						"alt":"JavaScript",
+						"title":"JavaScript",
+						"value":"5%",
+					})
+					@@include('skills-item/index.html', {
+						"svg":"/static/images/git.svg",
+						"alt":"Git/GitHub",
+						"title":"Git/GitHub",
+						"value":"15%",
+					})
+					@@include('skills-item/index.html', {
+						"svg":"/static/images/figma.svg",
+						"alt":"Figma",
+						"title":"Figma",
+						"value":"80%",
+					})
+				</ul>
+			</div>
+		</section>
+		<section class="portfolio">
+			<div class="constainer">
+				<h2 class="portfolio__title title">Portfolio</h2>
+				<div class="portfolio__slider">
+					<div class="portfolio__slider-inner">
+						<ul class="portfolio__slider-list">
+							<li class="portfolio__slider-item">
+								<div class="portfolio__slider-img_wrapper">
+									<img class="portfolio__slider-img" src="../../static/images/portfolio.jpg" alt="">
+								</div>
 							</li>
 						</ul>
-						<div class="slider__controls">
-							<div class="slider__left-control">
-								<svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<rect x="1.25" y="1.25006" width="39.5" height="39.5" rx="19.75" stroke="#070707" stroke-width="2.5"/>
-									<rect x="17.4209" y="9.30084" width="16.5512" height="3" rx="1.5" transform="rotate(45 17.4209 9.30084)" fill="#070707"/>
-									<rect x="15.2998" y="30.5801" width="16.5512" height="3" rx="1.5" transform="rotate(-45 15.2998 30.5801)" fill="#070707"/>
-								</svg>
-							</div>
-							<ul class="slider__paginations">
-								<li class="sli"></li>
-							</ul>
-							<div class="slider__right-control">
-								<svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<rect x="40.75" y="40.75" width="39.5" height="39.5" rx="19.75" transform="rotate(-180 40.75 40.75)" stroke="#070707" stroke-width="2.5"/>
-									<rect x="24.5791" y="32.6992" width="16.5512" height="3" rx="1.5" transform="rotate(-135 24.5791 32.6992)" fill="#070707"/>
-									<rect x="26.7002" y="11.4199" width="16.5512" height="3" rx="1.5" transform="rotate(135 26.7002 11.4199)" fill="#070707"/>
-								</svg>
-							</div>
+						<svg class="portfolio__slider-control_left" width="43" height="61" viewBox="0 0 43 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g filter="url(#filter0_d)">
+								<rect x="30.1641" y="52" width="29.9303" height="5.42502" rx="2.71251" transform="rotate(-135 30.1641 52)" fill="#070707"/>
+								<rect x="34" y="13.5198" width="29.9303" height="5.42502" rx="2.71251" transform="rotate(135 34 13.5198)" fill="#070707"/>
+							</g>
+							<defs>
+								<filter id="filter0_d" x="0.123535" y="0.807373" width="42.7529" height="60.069" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+									<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+										<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+									<feOffset/>
+									<feGaussianBlur stdDeviation="5"/>
+									<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+									<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+									<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+								</filter>
+							</defs>
+						</svg>
+						<svg class="portfolio__slider-control_right" width="43" height="61" viewBox="0 0 43 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g filter="url(#filter0_d)">
+								<rect x="12.8359" y="9" width="29.9303" height="5.42502" rx="2.71251" transform="rotate(45 12.8359 9)" fill="#070707"/>
+								<rect x="9" y="47.4802" width="29.9303" height="5.42502" rx="2.71251" transform="rotate(-45 9 47.4802)" fill="#070707"/>
+							</g>
+							<defs>
+								<filter id="filter0_d" x="0.123535" y="0.123535" width="42.7529" height="60.0693" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+									<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+										<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+									<feOffset/>
+									<feGaussianBlur stdDeviation="5"/>
+									<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+									<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+									<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+								</filter>
+							</defs>
+						</svg>
+						<div class="portfolio__overlay">
+							<div class="portfolio__overlay-title">Learning site for DL Academy courses</div>
+							<div class="portfolio__overlay-text">A simple multi-page static site. The design layout was in Figma. HTML and CSS were used. The site is responsive and cross-browser, but without adding interactivity via JavaScript.</div>
 						</div>
 					</div>
 				</div>
@@ -53,6 +142,92 @@
 		</section>
     </main>
     @@include('footer/index.html')
-    <script src="scripts.js"></script>
+	<form class="sign-in" action="">
+		<div class="sign-in__field">
+			<label for="sign__input-email" class="sign-in__label">Email</label>
+			<input type="text" id="sign__input-email" class="sign-in__email-input" placeholder="">
+		</div>
+		<div class="sign-in__field">
+			<label for="sign__input-password" class="sign-in__label">Password</label>
+			<input type="password" id="sign__input-password" class="sign-in__password-input" placeholder="">
+		</div>
+		<button type="submit" class="sign-in__btn btn">Log in</button>
+		<button class="close__btn sign-in__close" type="button" aria-label="Close button"></button>
+	</form>
+	<form class="register" action="">
+		<div class="register__field">
+			<div class="input__wrapper">
+				<label for="register__input-email" class="register__label">Email</label>
+				<input type="text" id="register__input-email" class="register__email-input" placeholder="">
+			</div>
+		</div>
+		<div class="register__field">
+			<div class="input__wrapper">
+				<label for="register__input-name" class="register__label">Name</label>
+				<input type="text" id="register__input-name" class="register__name-input" placeholder="">
+			</div>
+			<div class="input__wrapper">
+				<label for="register__input-suname" class="register__label">Suname</label>
+				<input type="text" id="register__input-suname" class="register__suname-input" placeholder="">
+			</div>
+		</div>
+		<div class="register__field">
+			<div class="input__wrapper">
+				<label for="register__input-password" class="register__label">Password</label>
+				<input type="text" id="register__input-password" class="register__password-input" placeholder="">
+			</div>
+			<div class="input__wrapper">
+				<label for="register__input-password-repeat" class="register__label">Repeat password</label>
+				<input type="text" id="register__input-password-repeat" class="register__password-input_repeat" placeholder="">
+			</div>
+		</div>
+		<div class="register__field">
+			<div class="input__wrapper">
+				<label for="register__input-location" class="register__label">Location</label>
+				<input type="text" id="register__input-location" class="register__location-input" placeholder="">
+			</div>
+			<div class="input__wrapper">
+				<label for="register__input-age" class="register__label">Age</label>
+				<input type="number" id="register__input-age" class="register__age-input" placeholder="">
+			</div>
+		</div>
+		<input type="checkbox" id="register__consent" class="register__consent-input disabled__input">
+		<label for="register__consent" class="message__consent-label disabled__input">Clicking on the button, you consent to the processing of your personal data.</label>
+		<button type="submit" class="register__btn btn disabled__btn">Sign up</button>
+		<button class="close__btn register__close" type="button" aria-label="Close button"></button>
+	</form>
+	<form class="message" action="">
+		<div class="message__field">
+			<div class="input__wrapper">
+				<label for="message__input-name" class="register__label">What is your name?</label>
+				<input type="text" id="message__input-name" class="message__name-input" placeholder="">
+			</div>
+			<div class="input__wrapper">
+				<label for="message__input-suname" class="register__label">Message subject</label>
+				<input type="text" id="message__input-suname" class="message__subject-input" placeholder="">
+			</div>
+		</div>
+		<div class="register__field">
+			<div class="input__wrapper">
+				<label for="message__input-password" class="register__label">Your Email</label>
+				<input type="text" id="message__input-password" class="register__password-input" placeholder="">
+			</div>
+			<div class="input__wrapper">
+				<label for="message__input-password-repeat" class="register__label">Your mobile phone</label>
+				<input type="text" id="message__input-password-repeat" class="register__password-input_repeat" placeholder="">
+			</div>
+		</div>
+		<div class="message__field">
+			<div class="input__wrapper">
+				<label for="message__input-email" class="register__label">What do you want to discuss with me?</label>
+				<textarea rows="10" id="message__input-email" class="message__email-input" placeholder=""></textarea>
+			</div>
+		</div>
+		<input type="checkbox" id="message__consent" class="message__consent-input disabled__input">
+		<label for="message__consent" class="message__consent-label disabled__input">Clicking on the button, you consent to the processing of your personal data.</label>
+		<button type="submit" class="message__btn btn disabled__btn disabled__btn" disabled>Send</button>
+		<button class="close__btn message__close" type="button" aria-label="Close button"></button>
+	</form>
+	<script src="script.js"></script>
   </body>
 </html>

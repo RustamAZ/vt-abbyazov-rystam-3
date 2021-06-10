@@ -1,0 +1,46 @@
+.skills__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+		.item__img {
+			margin-bottom: 20px;
+		}
+		.item__title {
+			margin-bottom: 28px;
+            font-family: 'Gilroy','Arial', sans-serif;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+            color: #828282;
+		}
+		.item__progress-bar {
+			display: flex;
+			align-items: center;
+			.progress-bar__body {
+                --bar-width:85%;
+				height: 9px;
+				width: 142px;
+				background-color:#E5E5E5;
+                position: relative;
+                &::before {
+                    content: '';
+                    display: block;
+                    height: 9px;
+                    width: var(--bar-width);
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    background-color: #000;
+                }
+			}
+			.progress-bar__value {
+				margin-right: 12px;
+                font-family: 'Gilroy','Arial', sans-serif;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 17px;
+                color: #828282;
+			}
+		}
+}

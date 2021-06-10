@@ -1,22 +1,61 @@
-footer {
-  background-color: #ffd042;
-  height: 80px;
-  display: flex;
-  align-items: center;
-
-  span {
-    padding-right: 20px;
+.footer {
+  padding: 60px 0;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-
-  a {
-    color: #000;
-    text-decoration: none;
-
-    &:not(:last-child) {
-      margin-right: 20px;
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__text {
+    max-width: 280px;
+    margin: 0 auto 20px auto;
+    font-family: 'Gilroy','Arial', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+  }
+  .message__btn {
+    max-width: 180px;
+    margin-bottom: 40px;
+    background-color: #070707;
+    color: #fff;
+    padding: 7.5px 25px;
+  }
+  .mail__btn {
+    margin-left: 30px;
+  }
+  &__social {
+    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    & button {
+      margin: 0 6px 10px 6px;
     }
-    &:hover {
-      border-bottom: 1px solid #000;
+  }
+  &__design {
+    font-family: 'Gilroy', 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #828282;
+    & a {
+      color: #828282;
+      border-bottom: 1px dashed #828282;
     }
+  }
+  &__author {
+    font-family: 'Gilroy', 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #828282;
+  }
+  &.gray {
+    background-color: #F6F6F6;
   }
 }

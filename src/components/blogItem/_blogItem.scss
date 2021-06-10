@@ -1,0 +1,81 @@
+.blog {
+    &__list-item {
+        width: 1000px;
+        width: 100%;
+        padding-top: 20px;
+        border-top: 2px solid #E5E5E5;
+        margin-bottom: 20px;
+    }
+    &__wrapper {
+        display: flex;
+        margin: auto 0; 
+    }
+    &__img-wrapper{
+        margin-right: 20px;
+    }
+    &__color-list {
+        display: flex;
+        margin-bottom: 10px;
+    }
+    &__color-item {
+        display: block;
+        width: 30px;
+        height: 10px;
+        margin-right: 5px;
+        background-color: #F79824;
+        border-radius: 5px;
+        &:nth-child(2) {
+            background-color: #6A7FDB;
+        }
+    }
+    &__info {
+        display: flex;
+        margin-bottom: 15px;
+        & div {
+            margin-right: 10px;
+        }
+    }
+    &__date {
+        font-family: 'Gilroy','Arial', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #828282;
+    }
+    &__views {
+        font-family: 'Gilroy','Arial', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #828282;
+    }
+    &__comments {
+        font-family: 'Gilroy','Arial', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #828282;
+    }
+    &__title {
+        font-family: 'Gilroy','Arial', sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        color: #070707;
+        margin-bottom: 10px;
+    }
+    &__text {
+        font-family: 'Gilroy','Arial',sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: #070707;
+        margin-bottom: 20px;
+    }
+    &__link {
+        font-family: 'Gilroy','Arial', sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+    }
+}

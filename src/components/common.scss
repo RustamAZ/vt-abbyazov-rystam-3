@@ -35,17 +35,35 @@ a {
 .container {
   margin: 0 auto;
   max-width: 1000px;
-  padding: 0 110px;
+  padding: 0 220px;
+}
+.title {
+  text-align: center;
+  font-family: 'Gilroy','Arial', sans-serif;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 41px;
+}
+.btn{
+  padding: 5px 13px;
+  border: 2.5px solid;
+  border-radius: 20px;
+  background: transparent;
+  font-family: 'Gilroy','Arial', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #070707;
 }
 
 .disabled__btn {
-  background-color:#C1C1C1;
-  color: #E1E1E1;
+  opacity: .3;
   pointer-events: none;
 }
 
 .disabled__input {
-  opacity: .7;
+  opacity: .3;
   pointer-events: none;
 }
 @font-face {
@@ -71,3 +89,5 @@ a {
 }
 @import "./header/header";
 @import "./footer/footer";
+@import "./skills-item/skills-item";
+@import "./blogItem/blogItem";

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+  />
+  <link href="/common.css" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/fonts/oswald.css" />
+  <link rel="shortcut icon" href="/static/images/favicon.ico">
+  <title>Главная</title>
+</head>
+<body>
+    @@include('header/index.html')
+    <main class="main">
+        <section class="subheader">
+            <div class="container">
+                <h1 class="subheader__title">My Blog</h1>
+                <button class="subheader__button visually-hidden" type="button" name="button">
+                </button>
+            </div>
+        </section>
+        <section class="filter">
+            <div class="container">
+                <h2 class="visually-hidden">Filter</h2>
+                <form class="filter__form" action="">
+                    <div class="filter__inner">
+                        <div class="filter__inputs">
+                            <fieldset class="filter__field">
+                                <legend class="filter__title">Tags</legend>
+                                <ul class="filter__tags">
+                                    <li class="tags__item">
+                                        <input id="tag-1" type="checkbox" class="filter__tag-input visually-hidden">
+                                        <label for="tag-1" class="filter__tag-label"></label>
+                                    </li>
+                                    <li class="tags__item">
+                                        <input id="tag-2" type="checkbox" class="filter__tag-input visually-hidden">
+                                        <label for="tag-2" class="filter__tag-label"></label>
+                                    </li>
+                                    <li class="tags__item">
+                                        <input id="tag-3" type="checkbox" class="filter__tag-input visually-hidden">
+                                        <label for="tag-3" class="filter__tag-label"></label>
+                                    </li>
+                                    <li class="tags__item">
+                                        <input id="tag-4" type="checkbox" class="filter__tag-input visually-hidden">
+                                        <label for="tag-4" class="filter__tag-label"></label>
+                                    </li>
+                                    <li class="tags__item">
+                                        <input id="tag-5" type="checkbox" class="filter__tag-input visually-hidden">
+                                        <label for="tag-5" class="filter__tag-label"></label>
+                                    </li>
+                                    <li class="tags__item">
+                                        <input id="tag-6" type="checkbox" class="filter__tag-input visually-hidden">
+                                        <label for="tag-6" class="filter__tag-label"></label>
+                                    </li>
+                                    <li class="tags__item">
+                                        <input id="tag-7" type="checkbox" class="filter__tag-input visually-hidden">
+                                        <label for="tag-7" class="filter__tag-label"></label>
+                                    </li>
+                                    <li class="tags__item">
+                                        <input id="tag-8" type="checkbox" class="filter__tag-input visually-hidden">
+                                        <label for="tag-8" class="filter__tag-label"></label>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                            <fieldset class="filter__field">
+                                <legend class="filter__title">Views</legend>
+                                <ul class="filter__views">
+                                    <li class="filter__views-item">
+                                        <div class="views__radio">
+                                            <input type="radio" id="views-first" class="views__input visually-hidden" name="views">
+                                            <label for="views-first" class="views__label">100-500</label>
+                                        </div>
+                                    </li>
+                                    <li class="filter__views-item">
+                                        <div class="views__radio">
+                                            <input type="radio" id="views-second" class="views__input visually-hidden" name="views">
+                                            <label for="views-second" class="views__label">500-1000</label>
+                                        </div>
+                                    </li>
+                                    <li class="filter__views-item">
+                                        <div class="views__radio">
+                                            <input type="radio" id="views-theerd" class="views__input visually-hidden" name="views">
+                                            <label for="views-theerd" class="views__label">1000-2000</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                            <fieldset class="filter__field">
+                                <legend class="filter__title">Comments</legend>
+                                <ul class="filter__comments">
+                                    <li class="filter__comments-item">
+                                        <div class="views__radio">
+                                            <input type="checkbox" id="comments-first" class="views__input visually-hidden" name="comments">
+                                            <label for="comments-first" class="views__label">0</label>
+                                        </div>
+                                    </li>
+                                    <li class="filter__comments-item">
+                                        <div class="views__radio">
+                                            <input type="checkbox" id="comments-second" class="views__input visually-hidden" name="comments">
+                                            <label for="comments-second" class="views__label">0-1</label>
+                                        </div>
+                                    </li>
+                                    <li class="filter__comments-item">
+                                        <div class="views__radio">
+                                            <input type="checkbox" id="comments-threed" class="views__input visually-hidden" name="comments">
+                                            <label for="comments-threed" class="views__label">1-50</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                            <fieldset class="filter__field">
+                                <legend class="filter__title">How show?</legend>
+                                <ul class="filter__show">
+                                    <li class="filter__show-item">
+                                        <div class="show__radio">
+                                            <input type="checkbox" id="show-first" class="show__input visually-hidden" name="show">
+                                            <label for="show-first" class="show__label">show 5</label>
+                                        </div>
+                                    </li>
+                                    <li class="filter__show-item">
+                                        <div class="show__radio">
+                                            <input type="checkbox" id="show-second" class="show__input visually-hidden" name="show">
+                                            <label for="show-second" class="show__label">show 10</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                            <fieldset class="filter__field">
+                                <legend class="filter__title">Sort by</legend>
+                                <ul class="filter__sort">
+                                    <li class="filter__sort-item">
+                                        <div class="show__radio">
+                                            <input type="radio" id="sort-first" class="sort__input visually-hidden" name="sort">
+                                            <label for="sort-first" class="sort__label">date</label>
+                                        </div>
+                                    </li>
+                                    <li class="filter__sort-item">
+                                        <div class="show__radio">
+                                            <input type="radio" id="sort-second" class="sort__input visually-hidden" name="sort">
+                                            <label for="sort-second" class="sort__label">title</label>
+                                        </div>
+                                    </li>
+                                    <li class="filter__sort-item">
+                                        <div class="show__radio">
+                                            <input type="radio" id="sort-threed" class="sort__input visually-hidden" name="sort">
+                                            <label for="sort-threed" class="sort__label">views</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                            <div class="filter__btn-wrapper">
+                                <button type="reset" class="filter__reset-btn btn">Reset</button>
+                            </div>
+                        </div>
+                        <div class="filter__search">
+                            <div class="filter__search-input-wrapper">
+                                <input type="search" class="filter__search-input">
+                            </div>
+                            <button type="submit" class="filter__search-btn btn">Search</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="blog">
+            <div class="container">
+                <h2 class="visually-hidden">Filter</h2>
+                <ul class="blog__list">
+                    @@include('blogItem/index.html', {
+						"img":"dog.jpg",
+						"date":"20.01.2020",
+						"views":"223 views",
+						"comments":"97 comments",
+						"title":"This is my new dog.",
+						"text":"Duis sit odio dui pretium suspendisse malesuada sit leo in. Massa nec eget etiam tellus ac. Sodales nibh pellentesque donec eu ultrices tortor condimentum massa.",
+					})
+                    @@include('blogItem/index.html', {
+						"img":"chiken.jpg",
+						"date":"17.01.2020",
+						"views":"12 views",
+						"comments":"0 comments",
+						"title":"Why do roosters scream in the morning?",
+						"text":"Erat nunc parturient feugiat egestas adipiscing erat eu. Non neque mi volutpat et lectus.",
+					})
+                    @@include('blogItem/index.html', {
+						"img":"kang.jpg",
+						"date":"17.01.2020",
+						"views":"337 views",
+						"comments":"48 comments",
+						"title":"Kangaroo. Start.",
+						"text":"Nulla tempus mauris sed vel bibendum. Felis urna suspendisse amet, laoreet sagittis. Semper pellentesque condimentum vitae morbi in dui. Et in et diam massa.",
+					})
+                    @@include('blogItem/index.html', {
+						"img":"duck.jpg",
+						"date":"15.01.2020",
+						"views":"222 views",
+						"comments":"14 comments",
+						"title":"Met a duckling at the pond.",
+						"text":"Nulla tempus mauris sed vel bibendum. Felis urna suspendisse amet, laoreet sagittis. Semper pellentesque condimentum vitae morbi in dui. Et in et diam massa.",
+					})
+                    @@include('blogItem/index.html', {
+						"img":"hask.jpg",
+						"date":"20.01.2020",
+						"views":"122 views",
+						"comments":"23 comments",
+						"title":"Can dogs also be friends?",
+						"text":"Eu, libero aliquet nibh turpis quis nulla et ullamcorper purus. Consequat egestas sed sagittis morbi lacus. Consectetur et justo, sagittis vitae mi faucibus urna, eu. ",
+					})
+                </ul>
+                <div class="blog__pagination">
+                    <button class="blog-contol-left blog__button-back_js"></button>
+                    <div class="blog__pagination-list blog__pagination_js">
+                        <a href="/" class="blog__pagination-item active">1</a>
+                        <a href="/" class="blog__pagination-item">2</a>
+                        <a href="/" class="blog__pagination-item">3</a>
+                        <a href="/" class="blog__pagination-item">4</a>
+                        <a href="/" class="blog__pagination-item">5</a>
+                        <a href="/" class="blog__pagination-item">6</a>
+                        <a href="/" class="blog__pagination-item">7</a>
+                        <a href="/" class="blog__pagination-item">8</a>
+                    </div>
+                    <button class="blog-contol-right blog__button-next_js"></button>
+                </div>
+            </div>
+        </section>
+    </main>
+    @@include('footer/index.html',{
+        "bgrcolor" : "gray",
+    })
+</body>
+</html>
